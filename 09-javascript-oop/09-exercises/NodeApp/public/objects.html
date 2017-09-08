@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Objects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Obj 1</h1>
+
+    <pre>
+                  var obj1 = {
+                    name: "OK Coders",
+                    getName: function() {
+                      return this.name;
+                    }
+                  };
+              </pre>
+
+    <!-- and perhaps a few more functions -->
+    <h1>Obj 2</h1>
+
+
+    <pre>
+                  
+                  var obj2 = {
+                    address: "419 Foobar St.",
+                    city: "Oklahoma City",
+                    state: "OK",
+                    zip: "73003",
+                    mailingAddress: function() {
+                      return this.address + "\n" + this.city + ", " + this.state + " " + this.zip;
+                    }
+                  };
+                  </pre>
+
+    <h1>Obj 3</h1>
+
+    <pre>
+        var obj3 = {
+          age: 19,
+          canDrink: function() {
+            return this.age >= 21;
+          }
+        };
+                  </pre>
+</body>
+
+</html>

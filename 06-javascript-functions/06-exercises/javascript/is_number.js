@@ -18,3 +18,4 @@ var input = process.argv[2];
  * isNaN()
  */
 
+console.log(!isNaN(input));

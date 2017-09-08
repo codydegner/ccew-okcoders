@@ -11,7 +11,10 @@
 // method should return the value in the name property.
 
 var obj1 = {
-  name: "OK Coders"
+  name: "OK Coders",
+  getName: function() {
+    return this.name;
+  }
 };
 
 
@@ -32,8 +35,13 @@ var obj2 = {
   address: "419 Foobar St.",
   city: "Oklahoma City",
   state: "OK",
-  zip: "73003"
-}
+  zip: "73003",
+  mailingAddress: function() {
+    return this.address + "\n" + this.city + ", " + this.state + " " + this.zip;
+  }
+};
+
+console.log(obj2.mailingAddress());
 
 
 // 3.
@@ -42,7 +50,10 @@ var obj2 = {
 // or equal to 21.
 
 var obj3 = {
-  age: 19
+  age: 19,
+  canDrink: function() {
+    return this.age >= 21;
+  }
 };
 
 

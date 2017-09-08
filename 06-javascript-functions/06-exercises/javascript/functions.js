@@ -15,9 +15,11 @@
  * print out the result of calling the function, for example:
  * console.log( hugeNumber() ) -> 18446744073709552000
  */
+function hugeNumber() {
+  return Math.pow(2, 62);
+}
 
-
-
+console.log(hugeNumber());
 
 /* 2. declare a function called testIt that takes one parameter,
  * the number 'x'
@@ -35,9 +37,23 @@
  * testIt(0); -> "0 is zero"
  * testIt(100); -> "100 is postive"
  */
+function testIt(x) {
+  switch(x) {
+  case x < 0:
+    console.log("x is negative");
+    break;
+  case x == 0:
+    console.log("x is zero");
+    break;
+  case x >= 0:
+    console.log("x is positive");
+    break;
+  }
+}
 
-
-
+testIt(-100);
+testIt(0);
+testIt(100);
 
 /* 3. declare a function called addSuffix that takes two parameters, 
  * the string 'name' and the boolean 'male'
@@ -51,7 +67,16 @@
  * console.log( addSuffix("Philip Dow", true) ); -> "Mr. Philip Dow"
  * console.log( addSuffix("Mary Beth Havard", false) ); -> "Mrs. Mary Beth Havard"
  */
+function addSuffix(name, male) {
+  if (male === true) {
+    return "Mr. " + name;
+  } else {
+    return "Mrs. " + name;
+  }
+}
 
+console.log(addSuffix("Philip Dow", true));
+console.log(addSuffix("Mary Beth Havard", false));
 
 
 
@@ -69,7 +94,7 @@
 
 function foo(x) {
 	console.log("foo has", x);
-	if (x==0) {
+	if (x == 0) {
 		return x;
 	} else {
 		return bar(x-2);
@@ -87,8 +112,8 @@ function bar(x) {
 
 /* uncomment the next three lines one at a time and run the program */
 
-// foo(12);
-// foo(15);
-// bar(12);
+foo(12);
+foo(15);
+bar(12);
 
 

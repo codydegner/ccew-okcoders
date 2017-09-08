@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Functions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Select Function</h1>
+
+    <strong>Implementation</strong>
+
+    <pre>
+        function select(data, callback) {
+          let local = [];
+          for(let i = 0; i < data.length; ++i) {
+            let element = data[i];
+            if (callback(element) === true) {
+              local.push(element);
+            }
+          }
+          return local;
+        }
+    </pre>
+
+    <strong>Usage</strong>
+
+    <pre>
+          var ages = [16,21,30,45,60,75];
+          var young = select(ages, function(item) {
+            return (item <= 25);
+          });
+    </pre>
+
+    <!-- and perhaps a few more functions -->
+    <h1>Reject Function</h1>
+
+    <strong>Implementation</strong>
+
+    <pre>
+        function reject(data, callback) {
+          let local = [];
+          for(let i = 0; i < data.length; ++i) {
+            let element = data[i];
+            if (callback(element) === false) {
+              local.push(element);
+            }
+          }
+          return local;
+        }
+        </pre>
+
+    <strong>Usage</strong>
+
+    <pre>
+        var ages = [16,21,30,45,60,75];
+        var old = reject(ages, function(item) {
+          return (item <= 25);
+        });
+    </pre>
+
+    <h1>Find Function</h1>
+    
+        <strong>Implementation</strong>
+    
+        <pre>
+            function find(data, callback) {
+              for(let i = 0; i < data.length; ++i) {
+                let element = data[i];
+                if (callback(element) === true) {
+                  return element;
+                }
+              }
+              return undefined;
+            }
+            </pre>
+    
+        <strong>Usage</strong>
+    
+        <pre>
+            var nums = [1,89,45,26,57,34];
+            var firstEven = find(nums, function(item) {
+              return (item % 2 == 0);
+            });
+        </pre>
+
+
+  </div>
+
+</body>
+
+</html>
