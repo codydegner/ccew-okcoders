@@ -11,15 +11,18 @@ Also ensure that you have installed the latest updates. Again click on the *Appl
 
 Install the following software by downloading it at these urls:
 
-[Sublime Text](http://www.sublimetext.com/)
+(Choose one)
+- [Sublime Text](http://www.sublimetext.com/)
+- [Visual Studio Code](https://code.visualstudio.com)
+- [Atom.io](https://atom.io)
 
-This is the free text editor we will be using in class. 
+These are popular free text editors we will be using in class. 
 
 [Google Chrome](https://www.google.com/intl/en-US/chrome/browser/)
 
-We will be doing all web development in Google Chrome because of its excellent developer tools.
+We will be doing all web development in Google Chrome (or Safari) because of its excellent developer tools.
 
-[iTerm2](http://www.iterm2.com/)
+[iTerm2](http://www.iterm2.com/) (optional)
 
 An enhanced Terminal we'll learn to use.
 
