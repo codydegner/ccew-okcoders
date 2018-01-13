@@ -7,13 +7,16 @@ You must be running a recent version of Windows, at least Windows Vista or highe
 
 Install the following software by downloading it at these urls:
 
-[Sublime Text](http://www.sublimetext.com/). 
+(Choose one)
+- [Sublime Text](http://www.sublimetext.com/)
+- [Visual Studio Code](https://code.visualstudio.com)
+- [Atom.io](https://atom.io)
 
-This is the free text editor we will be using in class. 
+These are popular free text editors we will be using in class. 
 
 [Google Chrome](https://www.google.com/intl/en-US/chrome/browser/). 
 
-We will be doing all web development in Google Chrome because of its excellent developer tools.
+We will be doing all web development in Google Chrome (or Safari) because of its excellent developer tools.
 
 [Git Bash](http://msysgit.github.io/)
 
